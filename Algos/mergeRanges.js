@@ -1,6 +1,13 @@
+// Merge meetings ranges
+// create a new array to hold the merge meeting time
+// iterate through the meeting times
+// checking if start time is greater than the previous end time we will add it to the new array
+// if the end time is greater than the previous end time change the previous end time to new end time
+// if start time and end time is less than we will add it to the front of the array
+
+
 function mergeRanges(meetings) {
 
-    // Merge meetings ranges
     let newArr = [meetings[0]];
     
     for (let i = 1; i < meetings.length; i += 1) {
