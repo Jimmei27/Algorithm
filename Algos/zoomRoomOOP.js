@@ -63,33 +63,33 @@ class Attendee {
   }
   
   // // Uncomment these lines to test your code!
-  const myZoom = new ZoomRoom('123abc');
-  const brandon = new Attendee('Brandon');
-  const carl = new Attendee('Carl');
-  myZoom.addAttendee(brandon);
-  myZoom.addAttendee(carl);
+  // const myZoom = new ZoomRoom('123abc');
+  // const brandon = new Attendee('Brandon');
+  // const carl = new Attendee('Carl');
+  // myZoom.addAttendee(brandon);
+  // myZoom.addAttendee(carl);
   
-  console.log(myZoom.attendees[0].attendeeName); // -> 'Brandon'
-  console.log(myZoom.attendees[1].attendeeName); // -> 'Carl'
-  console.log(myZoom.removeAttendee().attendeeName) // -> 'Carl'
+  // console.log(myZoom.attendees[0].attendeeName); // -> 'Brandon'
+  // console.log(myZoom.attendees[1].attendeeName); // -> 'Carl'
+  // console.log(myZoom.removeAttendee().attendeeName) // -> 'Carl'
   
-  myZoom.makeHost(0, '123abc');
-  console.log(myZoom.host.attendeeName); // -> 'Brandon'
+  // myZoom.makeHost(0, '123abc');
+  // console.log(myZoom.host.attendeeName); // -> 'Brandon'
   
-  // // incorrect password will not overwrite host
-  myZoom.makeHost(1, 'abc123');
-  console.log(myZoom.host.attendeeName) // -> still 'Brandon'
+  // // // incorrect password will not overwrite host
+  // myZoom.makeHost(1, 'abc123');
+  // console.log(myZoom.host.attendeeName) // -> still 'Brandon'
   
-  // add bob in so there are two attendees again
-  myZoom.addAttendee(new Attendee('Bob'));
-  // should make isMuted for all attendees true
-  myZoom.muteAll();
-  console.log(myZoom.attendees[0].isMuted); // -> true
-  console.log(myZoom.attendees[1].isMuted); // -> true
+  // // add bob in so there are two attendees again
+  // myZoom.addAttendee(new Attendee('Bob'));
+  // // should make isMuted for all attendees true
+  // myZoom.muteAll();
+  // console.log(myZoom.attendees[0].isMuted); // -> true
+  // console.log(myZoom.attendees[1].isMuted); // -> true
   
-  // should make isMuted for all attendees false
-  myZoom.unmuteAll();
-  console.log(myZoom.attendees[0].isMuted); // -> false
-  console.log(myZoom.attendees[1].isMuted); // -> false
+  // // should make isMuted for all attendees false
+  // myZoom.unmuteAll();
+  // console.log(myZoom.attendees[0].isMuted); // -> false
+  // console.log(myZoom.attendees[1].isMuted); // -> false
   
   

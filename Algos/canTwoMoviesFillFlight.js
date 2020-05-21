@@ -22,19 +22,19 @@ const canTwoMoviesFillFlight = (movieLengths, flightLength)  => {
   }
 
 
-console.log(canTwoMoviesFillFlight([2, 4], 1))
-//expected = false;
-console.log(canTwoMoviesFillFlight([2, 4], 6))
-//expected = true;
-console.log(canTwoMoviesFillFlight([3, 8], 6))
-//expected = false;
-console.log(canTwoMoviesFillFlight([3, 8, 3], 6))
-// expected = true;
-console.log(canTwoMoviesFillFlight([1, 2, 3, 4, 5, 6], 7))
-// expected = true;
-console.log(canTwoMoviesFillFlight([4, 3, 2], 5))
-// expected = true;
-console.log(canTwoMoviesFillFlight([6], 6))
-// expected = false;
-console.log(canTwoMoviesFillFlight([], 2))
-// expected = false;
+// console.log(canTwoMoviesFillFlight([2, 4], 1))
+// //expected = false;
+// console.log(canTwoMoviesFillFlight([2, 4], 6))
+// //expected = true;
+// console.log(canTwoMoviesFillFlight([3, 8], 6))
+// //expected = false;
+// console.log(canTwoMoviesFillFlight([3, 8, 3], 6))
+// // expected = true;
+// console.log(canTwoMoviesFillFlight([1, 2, 3, 4, 5, 6], 7))
+// // expected = true;
+// console.log(canTwoMoviesFillFlight([4, 3, 2], 5))
+// // expected = true;
+// console.log(canTwoMoviesFillFlight([6], 6))
+// // expected = false;
+// console.log(canTwoMoviesFillFlight([], 2))
+// // expected = false;

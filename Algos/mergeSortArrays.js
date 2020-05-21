@@ -64,4 +64,4 @@ const mergedArr = (arr1, arr2) => {
   }
   return newArr
 }
-console.log(mergedArr(myArray, aliceArray))
+// console.log(mergedArr(myArray, aliceArray))
