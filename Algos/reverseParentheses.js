@@ -1,19 +1,27 @@
+// use empty string and stack
+// iterate through the string
+// if the element is an open parens push the string into the stack
+// if the element is an close parents pop off the last element in the stack concat the string to it and assign it to the string
+// add the letter to the string
+
 const reverseParentheses = (str) => {
+    let text = "";
     let stack = [];
-    let count = 0;
+
     for (let i = 0; i < str.length; i += 1) {
-        let inner = [];
-        if(str[i] === "(") {
-            stack.push(inner)
-            inner = []} 
-        else if (str[i] === ")") {
-            // stack.reverse()
+       
+        if (str[i] === "(") {
+            stack.push(text)
+            text = "";
+        } else if (str[i] === ")") {
+           let popped = stack.pop()
+           text = popped.concat(text.split('').reverse().join(''))
         } else {
-            inner.push(str[i])
-            console.log(inner)
+            text += str[i]
         }
     }
-    return stack
+
+    return text
 };
 
-console.log(reverseParentheses("(u(love)i)"))
+// console.log(reverseParentheses("(u(love)i)"))
