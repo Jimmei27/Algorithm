@@ -1,6 +1,9 @@
-const singleNumber = (nums) => {
-    var single;
-    for (var i = 0; i < nums.length; i++) {
+// iterate through th array 
+// return the number that appears once 
+
+const singleNumber = (nums) => {    
+    let single;
+    for (let i = 0; i < nums.length; i++) {
         single ^= nums[i];
     }
     return single;

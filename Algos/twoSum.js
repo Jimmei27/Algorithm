@@ -46,3 +46,52 @@ const threeSum = (num, target) => {
 
 // console.log(threeSum([-1, 0, 1, 2, -1, -4], 0))
 
+
+    
+var divide = function(dividend, divisor) {
+    let num = 0;
+    let count = 0;
+    while (count < Math.abs(dividend)){
+        num += 1;
+        count += Math.abs(divisor)
+    }
+    if(count === Math.abs(dividend)){
+        if((dividend < 0 && divisor < 0) || (dividend > 0 && divisor > 0) ) {
+            return num
+        } else {
+            return -Math.abs(num)
+        }
+    } else {
+        if((dividend < 0 && divisor < 0) || (dividend > 0 && divisor > 0) ) {
+            return num - 1
+        } else {
+            return -Math.abs(num - 1)
+        }
+    }
+};
+
+// console.log(divide(-20000099, -1))
+
+var searchRange = function(nums, target) {
+    let a = 0;
+    let b = nums.length - 1
+    while (a < b) {
+        if (nums[a] !== target) {
+            a += 1
+        }
+        if (nums[b] !== target) {
+            b -= 1
+        }
+        console.log(a,b)
+        if (nums[a] === target && nums[b] === target){
+            return [a,b]
+        }
+    }
+    console.log(1)
+    if(nums[a] === target && nums[b] === target) {
+        return [a,b]
+    }
+    return [-1,-1]
+};
+
+console.log(searchRange([-1], 1))

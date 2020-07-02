@@ -1,3 +1,7 @@
+// create a count variable and an empty array
+// sort the array lowest to highest
+// iterate through the array 
+
 const largestDivisibleSubset = (num) => {
     let count = 0;
     let newArr = [];
@@ -25,6 +29,6 @@ const largestDivisibleSubset = (num) => {
 };
 
 
-console.log(largestDivisibleSubset([1,2,3]))
-console.log(largestDivisibleSubset([1,2,4,8]))
-console.log(largestDivisibleSubset([4,8,10,240]))
+// console.log(largestDivisibleSubset([1,2,3]))
+// console.log(largestDivisibleSubset([1,2,4,8]))
+// console.log(largestDivisibleSubset([4,8,10,240]))
