@@ -5,7 +5,7 @@ function ListNode(val) {
  this.next = null;
  }
 
-var deleteNode = function(node) {
+const deleteNode = (node) => {
         
     if(this.val === null) {
         delete node;
@@ -24,6 +24,6 @@ b.next = c;
 let a = new ListNode(4)
 a.next = b;
 
-
+// console.log(a)
 // console.log(deleteNode(c))
 // console.log(a)

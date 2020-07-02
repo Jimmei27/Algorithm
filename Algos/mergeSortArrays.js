@@ -6,6 +6,10 @@ const mergeArrays = (myArray, aliceArray) => {
 
 }
   
+// create an array to hold the merged array
+// using multiple pointers (one on each array and one for count)
+// reassign the index in the empty array to the lowest number from both array
+
 const myArray = [3, 4, 6, 10, 11, 15, 20, 21];
 const aliceArray = [1, 5, 8, 12, 14, 19];
 
